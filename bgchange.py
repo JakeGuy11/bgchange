@@ -34,7 +34,7 @@ while(True):
 		# Wait a little so we don't overload the processor
 		time.sleep(0.25)
 	# Generate the command to execute
-	feh_command = ["feh", "--no-fehbg", "--image-bg", "black", "--bg-max", path_to_backgrounds + current_background]
+	feh_command = ["feh", "--no-fehbg", "--image-bg", "black", "--bg-fill", path_to_backgrounds + current_background]
 	# Execute the command
 	subprocess.run(feh_command)
 	# Wait the chosen amount of time to refresh the background
